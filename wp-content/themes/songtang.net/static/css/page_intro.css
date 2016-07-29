@@ -1,0 +1,19 @@
+#banner {
+    width:100%;
+    overflow: hidden;
+}
+#banner .intro {
+    background: url('../img/common/banner_001.jpg') no-repeat center;
+    height:93px;
+}
+
+
+#post_content {
+    text-indent: 2em;
+    font-size:12px;
+    color: #746969;
+    line-height:22px;
+    text-align: justify;
+}
+
+
