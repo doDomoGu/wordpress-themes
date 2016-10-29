@@ -1,4 +1,10 @@
-\.htaccess
-\wp-config.php
-.idea/
-\wp-content/uploads/
+/.htaccess
+/wp-config.php
+.idea/*
+/wp-content/uploads/*
+/wp-content/plugins/*
+!/wp-content/plugins/akismet/*
+!/wp-content/plugins/index.php
+!/wp-content/plugins/hello.php
+
+##github 提交测试2222
