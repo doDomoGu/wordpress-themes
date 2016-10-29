@@ -1,19 +1,95 @@
-# Copyright (C) 2013 WordPress
-# This file is distributed under the same license as the WordPress package.
+# Translation of Network Admin in Chinese (China)
+# This file is distributed under the same license as the Network Admin package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress 4.5\n"
-"Report-Msgid-Bugs-To: https://make.wordpress.org/polyglots/\n"
-"POT-Creation-Date: 2016-04-17 02:15+0000\n"
-"PO-Revision-Date: 2016-04-17 02:21+0000\n"
-"Last-Translator: Jimmy Xu <me@jimmyxu.org>\n"
-"Language-Team: WordPress China\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2016-04-17 02:35:26+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: Network Admin\n"
+
+#: wp-admin/network/users.php:162
+msgid "Hover over any user on the list to make the edit links appear. The Edit link on the left will take you to their Edit User profile page; the Edit link on the right by any site name goes to an Edit Site screen for that site."
+msgstr "将鼠标移至用户的上方，将出现编辑链接。左侧的编辑链接是编辑用户信息的；而右侧的编辑链接用于编辑其所属站点的信息。"
+
+#: wp-admin/network/users.php:163
+msgid "You can also go to the user&#8217;s profile page by clicking on the individual username."
+msgstr "您也可以通过点击用户的名字，访问其资料页。"
+
+#: wp-admin/network/users.php:164
+msgid "You can sort the table by clicking on any of the bold headings and switch between list and excerpt views by using the icons in the upper right."
+msgstr "您可以通过点击加粗的表头来对项目进行排序。有上方的图标可在“列表视图”和“摘要视图”间切换。"
+
+#: wp-admin/network/users.php:165
+msgid "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
+msgstr "批量操作将永久删除选中的用户，或标记/取消标记选择的用户为垃圾用户。垃圾用户的发布的文章将被删除，并无法再使用原电子邮件地址注册。"
+
+#: wp-admin/network/users.php:166
+msgid "You can make an existing user an additional super admin by going to the Edit User profile page and checking the box to grant that privilege."
+msgstr "您可将现有的用户设为超级管理员，方法是：在编辑用户资料的页面，点击选框以赋予该用户权限。"
+
+#: wp-admin/network/users.php:192
+msgid "Users marked as spam."
+msgstr "多个用户已被标记为垃圾用户。"
+
+#: wp-admin/network/users.php:195
+msgid "Users removed from spam."
+msgstr "多个用户已被从垃圾用户列表中移除。"
+
+#: wp-admin/network/users.php:198
+msgid "Users deleted."
+msgstr "多个用户已被删除。"
+
+#: wp-admin/network.php:29
+msgid "The Network creation panel is not for WordPress MU networks."
+msgstr "网络创建页面对WordPress MU网络不适用。"
+
+#. translators: 1: WP_ALLOW_MULTISITE 2: wp-config.php
+#: wp-admin/network.php:44
+msgid "You must define the %1$s constant as true in your %2$s file to allow creation of a Network."
+msgstr "您必须在您的%2$s文件中将%1$s常量设置为真来创建网络。"
+
+#: wp-admin/network.php:55
+msgid "Create a Network of WordPress Sites"
+msgstr "创建一个WordPress站点网络"
+
+#: wp-admin/network.php:59
+msgid "This screen allows you to configure a network as having subdomains (<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</code>). Subdomains require wildcard subdomains to be enabled in Apache and DNS records, if your host allows it."
+msgstr "您可以在本页面配置使用子域名（<code>site1.example.com</code>）或子目录（<code>example.com/site1</code>）的网络。若使用子域名，您需要在Apache和DNS记录中启用泛域名。"
+
+#: wp-admin/network.php:60
+msgid "Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your install. Fill out the network details, and click install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories)."
+msgstr "选择子域名或子目录；一旦安装完成不可更改，除非重新配置您的安装。填写网络详情，再点击安装。若不起作用，您可能必须添加泛域名记录（用于子域名）或更换固定链接（使用子目录）。"
+
+#: wp-admin/network.php:61
+msgid "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files."
+msgstr "在“配置网络”的下一个页面，WordPress将向您提供专为您生成的几行代码，请将它们按要求加入到wp-config.php和.htaccess文件中。请确保您的FTP客户端不隐藏以点（.）开头的文件，这样您才能看到.htaccess文件；若它确实不存在，您需手工创建这个文件。请在对文件作出更改前，备份这两个文件。"
+
+#: wp-admin/network.php:62
+msgid "Add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules)."
+msgstr "加入如下内容到 wp-config.php（在<code>/*...stop editing...*/或/*...停止编辑...*/</code>上方）和<code>.htaccess</code>（替换WordPress原来生成的内容）。"
+
+#: wp-admin/network.php:63
+msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar."
+msgstr "在您添加完代码后，请在浏览器刷新页面，之后多站点功能就应该自动启用了。这个页面将仍然保留这段代码，以备日后使用。您可在“管理网络”界面的导航菜单中再次访问本页面来查看代码。用户可以通过顶部“工具栏”中的“我的站点”下拉菜单在“管理网络”和“管理站点”之间切换。"
+
+#: wp-admin/network.php:64
+msgid "The choice of subdirectory sites is disabled if this setup is more than a month old because of permalink problems with &#8220;/blog/&#8221; from the main site. This disabling will be addressed in a future version."
+msgstr "若本站点已经安装超过一个月了。由于主站点“/blog/”固定链接的问题，您不能选择使用子目录。此问题将很快在未来版本中解决。"
+
+#: wp-admin/network.php:66 wp-admin/network.php:77
+msgid "<a href=\"https://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Create_A_Network\" target=\"_blank\">创建网络使用帮助</a>"
+
+#: wp-admin/network.php:67 wp-admin/network.php:78
+msgid "<a href=\"https://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentation on the Network Screen</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">网络设置使用帮助</a>"
+
+#: wp-admin/network.php:71
+msgid "Network"
+msgstr "站点网络"
 
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:41
 #: wp-admin/network/site-info.php:198
@@ -188,9 +264,7 @@ msgid "Registered"
 msgstr "已注册"
 
 #: wp-admin/includes/network.php:105
-msgid ""
-"The constant DO_NOT_UPGRADE_GLOBAL_TABLES cannot be defined when creating a "
-"network."
+msgid "The constant DO_NOT_UPGRADE_GLOBAL_TABLES cannot be defined when creating a network."
 msgstr "无法在DO_NOT_UPGRADE_GLOBAL_TABLES常量被定义时创建网络。"
 
 #: wp-admin/includes/network.php:113 wp-admin/includes/network.php:363
@@ -199,9 +273,7 @@ msgid "Warning:"
 msgstr "警告："
 
 #: wp-admin/includes/network.php:113
-msgid ""
-"Please <a href=\"%s\">deactivate your plugins</a> before enabling the "
-"Network feature."
+msgid "Please <a href=\"%s\">deactivate your plugins</a> before enabling the Network feature."
 msgstr "请在启用网络功能前<a href=\"%s\">禁用您的扩展</a>。"
 
 #: wp-admin/includes/network.php:113
@@ -235,17 +307,12 @@ msgid "Welcome to the Network installation process!"
 msgstr "欢迎来到网络安装向导！"
 
 #: wp-admin/includes/network.php:151
-msgid ""
-"Fill in the information below and you&#8217;ll be on your way to creating a "
-"network of WordPress sites. We will create configuration files in the next "
-"step."
+msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
 msgstr "请填写以下信息来创建一个WordPress网络。我们会在下一步创建配置文件。"
 
 #. translators: %s: mod_rewrite
 #: wp-admin/includes/network.php:165
-msgid ""
-"Please make sure the Apache %s module is installed as it will be used at the "
-"end of this installation."
+msgid "Please make sure the Apache %s module is installed as it will be used at the end of this installation."
 msgstr "请确保Apache的%s模块已被安装，在安装过程最后会用到该模块。"
 
 #: wp-admin/includes/network.php:170 wp-admin/includes/network.php:219
@@ -261,22 +328,15 @@ msgstr "看起来Apache的%s模块未被安装。"
 #. translators: 1: mod_rewrite, 2: mod_rewrite documentation URL, 3: Google
 #. search for mod_rewrite
 #: wp-admin/includes/network.php:181
-msgid ""
-"If %1$s is disabled, ask your administrator to enable that module, or look "
-"at the <a href=\"%2$s\">Apache documentation</a> or <a href=\"%3$s"
-"\">elsewhere</a> for help setting it up."
-msgstr ""
-"如果%1$s未启用，请联系您的管理员来启用该模块，或查阅<a href=\"%2$s\">Apache文"
-"档</a>或<a href=\"%3$s\">其他地方</a>的设定帮助。"
+msgid "If %1$s is disabled, ask your administrator to enable that module, or look at the <a href=\"%2$s\">Apache documentation</a> or <a href=\"%3$s\">elsewhere</a> for help setting it up."
+msgstr "如果%1$s未启用，请联系您的管理员来启用该模块，或查阅<a href=\"%2$s\">Apache文档</a>或<a href=\"%3$s\">其他地方</a>的设定帮助。"
 
 #: wp-admin/includes/network.php:191
 msgid "Addresses of Sites in your Network"
 msgstr "您网络中站点的地址"
 
 #: wp-admin/includes/network.php:192
-msgid ""
-"Please choose whether you would like sites in your WordPress network to use "
-"sub-domains or sub-directories."
+msgid "Please choose whether you would like sites in your WordPress network to use sub-domains or sub-directories."
 msgstr "请选择您希望您WordPress网络中的站点使用子域名还是子目录。"
 
 #: wp-admin/includes/network.php:193
@@ -284,9 +344,7 @@ msgid "You cannot change this later."
 msgstr "您在此后将不能修改此值。"
 
 #: wp-admin/includes/network.php:194
-msgid ""
-"You will need a wildcard DNS record if you are going to use the virtual host "
-"(sub-domain) functionality."
+msgid "You will need a wildcard DNS record if you are going to use the virtual host (sub-domain) functionality."
 msgstr "如果您希望使用虚拟主机（子域名）功能，您将需要一个通配DNS记录。"
 
 #: wp-admin/includes/network.php:198
@@ -311,9 +369,7 @@ msgstr "如<code>%1$s/site1</code>和<code>%1$s/site2</code>"
 
 #: wp-admin/includes/network.php:219 wp-admin/includes/network.php:529
 #: wp-admin/includes/network.php:569
-msgid ""
-"Subdirectory networks may not be fully compatible with custom wp-content "
-"directories."
+msgid "Subdirectory networks may not be fully compatible with custom wp-content directories."
 msgstr "子目录网络可能无法与自定义的wp-content目录完全兼容。"
 
 #: wp-admin/includes/network.php:224 wp-admin/includes/network.php:234
@@ -323,13 +379,8 @@ msgstr "服务器地址"
 
 #. translators: 1: site url 2: host name 3. www
 #: wp-admin/includes/network.php:227
-msgid ""
-"We recommend you change your siteurl to %1$s before enabling the network "
-"feature. It will still be possible to visit your site using the %3$s prefix "
-"with an address like %2$s but any links will not have the %3$s prefix."
-msgstr ""
-"在启用网络功能前，我们推荐您将siteurl修改为%1$s。您将来仍可使用带有%3$s前缀的"
-"地址（如%2$s）来访问您的网站，但任何链接将不会带有%3$s的前缀。"
+msgid "We recommend you change your siteurl to %1$s before enabling the network feature. It will still be possible to visit your site using the %3$s prefix with an address like %2$s but any links will not have the %3$s prefix."
+msgstr "在启用网络功能前，我们推荐您将siteurl修改为%1$s。您将来仍可使用带有%3$s前缀的地址（如%2$s）来访问您的网站，但任何链接将不会带有%3$s的前缀。"
 
 #. translators: %s: host name
 #: wp-admin/includes/network.php:238 wp-admin/includes/network.php:287
@@ -346,26 +397,16 @@ msgstr "子目录安装"
 
 #. translators: 1: localhost 2: localhost.localdomain
 #: wp-admin/includes/network.php:254
-msgid ""
-"Because you are using %1$s, the sites in your WordPress network must use sub-"
-"directories. Consider using %2$s if you wish to use sub-domains."
-msgstr ""
-"因为您在使用%1$s，您的网络中的站点必须使用子目录。请考虑使用%2$s如果您希望使"
-"用子域名。"
+msgid "Because you are using %1$s, the sites in your WordPress network must use sub-directories. Consider using %2$s if you wish to use sub-domains."
+msgstr "因为您在使用%1$s，您的网络中的站点必须使用子目录。请考虑使用%2$s如果您希望使用子域名。"
 
 #: wp-admin/includes/network.php:260 wp-admin/includes/network.php:270
 #: wp-admin/includes/network.php:277
-msgid ""
-"The main site in a sub-directory install will need to use a modified "
-"permalink structure, potentially breaking existing links."
-msgstr ""
-"在子目录设定中的主站点将会需要使用修改过的永久链接结构，这有可能破坏现有的链"
-"接。"
+msgid "The main site in a sub-directory install will need to use a modified permalink structure, potentially breaking existing links."
+msgstr "在子目录设定中的主站点将会需要使用修改过的永久链接结构，这有可能破坏现有的链接。"
 
 #: wp-admin/includes/network.php:267
-msgid ""
-"Because your install is in a directory, the sites in your WordPress network "
-"must use sub-directories."
+msgid "Because your install is in a directory, the sites in your WordPress network must use sub-directories."
 msgstr "因为您在一个目录中安装了WordPress，您的网络中的站点必须使用子目录。"
 
 #: wp-admin/includes/network.php:275
@@ -373,9 +414,7 @@ msgid "Sub-domain Install"
 msgstr "子域名安装"
 
 #: wp-admin/includes/network.php:276
-msgid ""
-"Because your install is not new, the sites in your WordPress network must "
-"use sub-domains."
+msgid "Because your install is not new, the sites in your WordPress network must use sub-domains."
 msgstr "因为您的安装并非全新，您的网络中的站点必须使用子域名。"
 
 #: wp-admin/includes/network.php:294 wp-admin/network/settings.php:107
@@ -403,9 +442,7 @@ msgid "An existing WordPress network was detected."
 msgstr "检测到已存在的WordPress网络。"
 
 #: wp-admin/includes/network.php:364
-msgid ""
-"Please complete the configuration steps. To create a new network, you will "
-"need to empty or remove the network database tables."
+msgid "Please complete the configuration steps. To create a new network, you will need to empty or remove the network database tables."
 msgstr "请完成设定步骤。要建立一个新的网络，您需要清空或移除网络数据库表。"
 
 #: wp-admin/includes/network.php:375
@@ -413,9 +450,7 @@ msgid "Enabling the Network"
 msgstr "正在启用网络"
 
 #: wp-admin/includes/network.php:376
-msgid ""
-"Complete the following steps to enable the features for creating a network "
-"of sites."
+msgid "Complete the following steps to enable the features for creating a network of sites."
 msgstr "完成以下步骤来启用建立网络的功能。"
 
 #. translators: 1: wp-config.php 2: .htaccess
@@ -431,12 +466,8 @@ msgstr "<strong>注意：</strong>我们推荐您备份已有的%1s文件。"
 
 #. translators: 1: wp-config.php 2: location of wp-config file
 #: wp-admin/includes/network.php:409
-msgid ""
-"Add the following to your %1$s file in %2$s <strong>above</strong> the line "
-"reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
-msgstr ""
-"请在您位于%2$s的%1$s中增加以下内容，放置在<code>/* 好了！请不要再继续编辑。请"
-"保存本文件。使用愉快！ */</code>那行<strong>之上</strong>："
+msgid "Add the following to your %1$s file in %2$s <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
+msgstr "请在您位于%2$s的%1$s中增加以下内容，放置在<code>/* 好了！请不要再继续编辑。请保存本文件。使用愉快！ */</code>那行<strong>之上</strong>："
 
 #. translators: 1: wp-config.php
 #: wp-admin/includes/network.php:448
@@ -454,16 +485,11 @@ msgstr "要让您的安装更加安全，请加入："
 
 #. translators: 1: a filename like .htaccess. 2: a file path.
 #: wp-admin/includes/network.php:523 wp-admin/includes/network.php:563
-msgid ""
-"Add the following to your %1$s file in %2$s, <strong>replacing</strong> "
-"other WordPress rules:"
-msgstr ""
-"将这些加入您位于%2$s的%1$s文件，<strong>替换</strong>其他WordPress规则："
+msgid "Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:"
+msgstr "将这些加入您位于%2$s的%1$s文件，<strong>替换</strong>其他WordPress规则："
 
 #: wp-admin/includes/network.php:578
-msgid ""
-"Once you complete these steps, your network is enabled and configured. You "
-"will have to log in again."
+msgid "Once you complete these steps, your network is enabled and configured. You will have to log in again."
 msgstr "在您完成这些步骤之后，您的网络即已启用并配置完成。您将需要重新登入。"
 
 #: wp-admin/network/index.php:20 wp-admin/network/settings.php:20
@@ -478,9 +504,7 @@ msgid "You do not have permission to access this page."
 msgstr "您无权查看此页面。"
 
 #: wp-admin/network/index.php:25
-msgid ""
-"Welcome to your Network Admin. This area of the Administration Screens is "
-"used for managing all aspects of your Multisite Network."
+msgid "Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network."
 msgstr "欢迎来到网络管理。这个管理页面可用来管理您的多站点网络的所有方面。"
 
 #: wp-admin/network/index.php:26
@@ -504,9 +528,7 @@ msgid "Modify global network settings"
 msgstr "修改全局网络设置"
 
 #: wp-admin/network/index.php:38
-msgid ""
-"The Right Now widget on this screen provides current user and site counts on "
-"your network."
+msgid "The Right Now widget on this screen provides current user and site counts on your network."
 msgstr "本页中的“Right Now”小工具显示了您网络中的用户和站点计数。"
 
 #: wp-admin/network/index.php:39
@@ -522,12 +544,8 @@ msgid "To search for a user or site, use the search boxes."
 msgstr "要搜索用户或站点，请使用搜索框。"
 
 #: wp-admin/network/index.php:42
-msgid ""
-"To search for a user, <strong>enter an email address or username</strong>. "
-"Use a wildcard to search for a partial username, such as user&#42;."
-msgstr ""
-"要搜索用户，请<strong>输入电子邮件地址或用户名</strong>。用通配符来搜索用户名"
-"的一部分，如user&#42;。"
+msgid "To search for a user, <strong>enter an email address or username</strong>. Use a wildcard to search for a partial username, such as user&#42;."
+msgstr "要搜索用户，请<strong>输入电子邮件地址或用户名</strong>。用通配符来搜索用户名的一部分，如user&#42;。"
 
 #: wp-admin/network/index.php:43
 msgid "To search for a site, <strong>enter the path or domain</strong>."
@@ -538,23 +556,16 @@ msgid "Quick Tasks"
 msgstr "快速任务"
 
 #: wp-admin/network/index.php:53
-msgid ""
-"<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank"
-"\">Documentation on the Network Admin</a>"
-msgstr ""
-"<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">网络"
-"管理使用帮助</a>"
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentation on the Network Admin</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Network_Admin\" target=\"_blank\">网络管理使用帮助</a>"
 
 #: wp-admin/network/index.php:54 wp-admin/network/site-info.php:35
 #: wp-admin/network/site-new.php:33 wp-admin/network/site-settings.php:33
 #: wp-admin/network/site-themes.php:33 wp-admin/network/site-users.php:36
 #: wp-admin/network/sites.php:46 wp-admin/network/user-new.php:30
 #: wp-admin/network/users.php:172
-msgid ""
-"<a href=\"https://wordpress.org/support/forum/multisite/\" target=\"_blank"
-"\">Support Forums</a>"
-msgstr ""
-"<a href=\"http://cn.forums.wordpress.org\" target=\"_blank\">中文支持论坛</a>"
+msgid "<a href=\"https://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://cn.forums.wordpress.org\" target=\"_blank\">中文支持论坛</a>"
 
 #: wp-admin/network/menu.php:19
 msgid "Updates"
@@ -587,73 +598,36 @@ msgid "Network Settings"
 msgstr "网络设置"
 
 #: wp-admin/network/settings.php:31
-msgid ""
-"This screen sets and changes options for the network as a whole. The first "
-"site is the main site in the network and network options are pulled from "
-"that original site&#8217;s options."
-msgstr ""
-"在本页面可对整个网络的设置进行修改。第一个站点是网络中的主站点，网络的设置从"
-"原始站点的设置中继承。"
+msgid "This screen sets and changes options for the network as a whole. The first site is the main site in the network and network options are pulled from that original site&#8217;s options."
+msgstr "在本页面可对整个网络的设置进行修改。第一个站点是网络中的主站点，网络的设置从原始站点的设置中继承。"
 
 #: wp-admin/network/settings.php:32
-msgid ""
-"Operational settings has fields for the network&#8217;s name and admin email."
+msgid "Operational settings has fields for the network&#8217;s name and admin email."
 msgstr "运营设置包括网络的名称以及管理员邮件地址栏目。"
 
 #: wp-admin/network/settings.php:33
-msgid ""
-"Registration settings can disable/enable public signups. If you let others "
-"sign up for a site, install spam plugins. Spaces, not commas, should "
-"separate names banned as sites for this network."
-msgstr ""
-"注册选项可控制公众注册。如果您允许其他人注册，建议您安装防垃圾内容（spam）的"
-"插件。您可以指定一些不允许作为站点名称的词语，用空格隔开（请注意不是逗号）。"
+msgid "Registration settings can disable/enable public signups. If you let others sign up for a site, install spam plugins. Spaces, not commas, should separate names banned as sites for this network."
+msgstr "注册选项可控制公众注册。如果您允许其他人注册，建议您安装防垃圾内容（spam）的插件。您可以指定一些不允许作为站点名称的词语，用空格隔开（请注意不是逗号）。"
 
 #: wp-admin/network/settings.php:34
-msgid ""
-"New site settings are defaults applied when a new site is created in the "
-"network. These include welcome email for when a new site or user account is "
-"registered, and what&#8127;s put in the first post, page, comment, comment "
-"author, and comment URL."
-msgstr ""
-"新站点设置是对于未来注册的站点的默认值。包含“欢迎”电子邮件、首篇文章、首篇评"
-"论、首个页面的内容。"
+msgid "New site settings are defaults applied when a new site is created in the network. These include welcome email for when a new site or user account is registered, and what&#8127;s put in the first post, page, comment, comment author, and comment URL."
+msgstr "新站点设置是对于未来注册的站点的默认值。包含“欢迎”电子邮件、首篇文章、首篇评论、首个页面的内容。"
 
 #: wp-admin/network/settings.php:35
-msgid ""
-"Upload settings control the size of the uploaded files and the amount of "
-"available upload space for each site. You can change the default value for "
-"specific sites when you edit a particular site. Allowed file types are also "
-"listed (space separated only)."
-msgstr ""
-"上传设置控制每个站点所能上传的文件数目、大小和文件类型（用空格隔开）。您也可"
-"以对每个站点做出不同的限制。"
+msgid "Upload settings control the size of the uploaded files and the amount of available upload space for each site. You can change the default value for specific sites when you edit a particular site. Allowed file types are also listed (space separated only)."
+msgstr "上传设置控制每个站点所能上传的文件数目、大小和文件类型（用空格隔开）。您也可以对每个站点做出不同的限制。"
 
 #: wp-admin/network/settings.php:37
-msgid ""
-"Menu setting enables/disables the plugin menus from appearing for non super "
-"admins, so that only super admins, not site admins, have access to activate "
-"plugins."
+msgid "Menu setting enables/disables the plugin menus from appearing for non super admins, so that only super admins, not site admins, have access to activate plugins."
 msgstr "菜单设置允许您选择一般用户是否有权自行控制插件。"
 
 #: wp-admin/network/settings.php:38
-msgid ""
-"Super admins can no longer be added on the Options screen. You must now go "
-"to the list of existing users on Network Admin > Users and click on Username "
-"or the Edit action link below that name. This goes to an Edit User page "
-"where you can check a box to grant super admin privileges."
-msgstr ""
-"现在已经不能在设置页面添加超级管理员了。您需前往“管理网络”>“用户”，然后点击相"
-"应的用户名，或其下的编辑链接。之后您可在用户编辑页面为用户授予超级管理员权"
-"限。"
+msgid "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Network Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
+msgstr "现在已经不能在设置页面添加超级管理员了。您需前往“管理网络”>“用户”，然后点击相应的用户名，或其下的编辑链接。之后您可在用户编辑页面为用户授予超级管理员权限。"
 
 #: wp-admin/network/settings.php:43
-msgid ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target="
-"\"_blank\">Documentation on Network Settings</a>"
-msgstr ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target="
-"\"_blank\">网络设置使用帮助</a>"
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">网络设置使用帮助</a>"
 
 #: wp-admin/network/settings.php:96
 msgid "Options saved."
@@ -664,9 +638,7 @@ msgid "Operational Settings"
 msgstr "运营设置"
 
 #: wp-admin/network/settings.php:118
-msgid ""
-"This email address will receive notifications. Registration and support "
-"emails will also come from this address."
+msgid "This email address will receive notifications. Registration and support emails will also come from this address."
 msgstr "此电子邮件地址会收到通知，注册和支持邮件也会从此地址发送。"
 
 #: wp-admin/network/settings.php:123
@@ -699,20 +671,15 @@ msgstr "用户不仅可以注册新用户，还可注册新站点。"
 
 #. translators: 1: NOBLOGREDIRECT 2: wp-config.php
 #: wp-admin/network/settings.php:142
-msgid ""
-"If registration is disabled, please set %1$s in %2$s to a URL you will "
-"redirect visitors to if they visit a non-existent site."
-msgstr ""
-"如果注册未启用，请在%2$s中设置%1$s为您希望重定向不存在站点的访问者到的URL。"
+msgid "If registration is disabled, please set %1$s in %2$s to a URL you will redirect visitors to if they visit a non-existent site."
+msgstr "如果注册未启用，请在%2$s中设置%1$s为您希望重定向不存在站点的访问者到的URL。"
 
 #: wp-admin/network/settings.php:153
 msgid "Registration notification"
 msgstr "注册提醒"
 
 #: wp-admin/network/settings.php:159
-msgid ""
-"Send the network admin an email notification every time someone registers a "
-"site or user account."
+msgid "Send the network admin an email notification every time someone registers a site or user account."
 msgstr "一旦有新用户、新站点注册，立即通知网络管理员。"
 
 #: wp-admin/network/settings.php:164
@@ -720,9 +687,7 @@ msgid "Add New Users"
 msgstr "添加新用户"
 
 #: wp-admin/network/settings.php:166
-msgid ""
-"Allow site administrators to add new users to their site via the \"Users "
-"&rarr; Add New\" page."
+msgid "Allow site administrators to add new users to their site via the \"Users &rarr; Add New\" page."
 msgstr "允许站点管理员通过子站点的“用户&rarr;添加新用户”页面添加新用户。"
 
 #: wp-admin/network/settings.php:171
@@ -730,8 +695,7 @@ msgid "Banned Names"
 msgstr "不允许使用的名称"
 
 #: wp-admin/network/settings.php:175
-msgid ""
-"Users are not allowed to register these sites. Separate names by spaces."
+msgid "Users are not allowed to register these sites. Separate names by spaces."
 msgstr "用户不可注册这些站点。名称间使用空格隔开。"
 
 #: wp-admin/network/settings.php:181
@@ -739,9 +703,7 @@ msgid "Limited Email Registrations"
 msgstr "限制电子邮件注册"
 
 #: wp-admin/network/settings.php:188
-msgid ""
-"If you want to limit site registrations to certain domains. One domain per "
-"line."
+msgid "If you want to limit site registrations to certain domains. One domain per line."
 msgstr "若您只允许用户注册某些域名。每个域名一行。"
 
 #: wp-admin/network/settings.php:194
@@ -749,8 +711,7 @@ msgid "Banned Email Domains"
 msgstr "不允许使用的电子邮件域"
 
 #: wp-admin/network/settings.php:199
-msgid ""
-"If you want to ban domains from site registrations. One domain per line."
+msgid "If you want to ban domains from site registrations. One domain per line."
 msgstr "若您不允许使用下列电子邮件域的用户注册站点。每个域名一行。"
 
 #: wp-admin/network/settings.php:205
@@ -865,69 +826,34 @@ msgstr "您无权编辑此站点。"
 
 #: wp-admin/network/site-info.php:25 wp-admin/network/site-settings.php:23
 #: wp-admin/network/site-themes.php:23 wp-admin/network/site-users.php:26
-msgid ""
-"The menu is for editing information specific to individual sites, "
-"particularly if the admin area of a site is unavailable."
+msgid "The menu is for editing information specific to individual sites, particularly if the admin area of a site is unavailable."
 msgstr "本菜单用于为特定站点编辑信息。此功能在某站点后台出现问题时尤为有用。"
 
 #: wp-admin/network/site-info.php:26 wp-admin/network/site-settings.php:24
 #: wp-admin/network/site-themes.php:24 wp-admin/network/site-users.php:27
-msgid ""
-"<strong>Info</strong> &mdash; The site URL is rarely edited as this can "
-"cause the site to not work properly. The Registered date and Last Updated "
-"date are displayed. Network admins can mark a site as archived, spam, "
-"deleted and mature, to remove from public listings or disable."
-msgstr ""
-"<strong>信息</strong> — 站点URL不会被经常编辑，因为这可能造成站点停止正常工"
-"作。此处显示了注册日期和最后更新日期。网络管理员可以标记站点为存档、垃圾、删"
-"除和成熟，也可以将站点从公开列表中移除或禁用。"
+msgid "<strong>Info</strong> &mdash; The site URL is rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
+msgstr "<strong>信息</strong> — 站点URL不会被经常编辑，因为这可能造成站点停止正常工作。此处显示了注册日期和最后更新日期。网络管理员可以标记站点为存档、垃圾、删除和成熟，也可以将站点从公开列表中移除或禁用。"
 
 #: wp-admin/network/site-info.php:27 wp-admin/network/site-settings.php:25
 #: wp-admin/network/site-themes.php:25 wp-admin/network/site-users.php:28
-msgid ""
-"<strong>Users</strong> &mdash; This displays the users associated with this "
-"site. You can also change their role, reset their password, or remove them "
-"from the site. Removing the user from the site does not remove the user from "
-"the network."
-msgstr ""
-"<strong>用户</strong> — 这里显示了与站点关联的用户。您可以修改他们的角色、重"
-"置密码、或将他们从站点移除。从站点移除用户并不会将他们从网络中移除。"
+msgid "<strong>Users</strong> &mdash; This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
+msgstr "<strong>用户</strong> — 这里显示了与站点关联的用户。您可以修改他们的角色、重置密码、或将他们从站点移除。从站点移除用户并不会将他们从网络中移除。"
 
 #: wp-admin/network/site-info.php:28 wp-admin/network/site-settings.php:26
 #: wp-admin/network/site-themes.php:26 wp-admin/network/site-users.php:29
-msgid ""
-"<strong>Themes</strong> &mdash; This area shows themes that are not already "
-"enabled across the network. Enabling a theme in this menu makes it "
-"accessible to this site. It does not activate the theme, but allows it to "
-"show in the site&#8217;s Appearance menu. To enable a theme for the entire "
-"network, see the <a href=\"%s\">Network Themes</a> screen."
-msgstr ""
-"<strong>主题</strong> — 此处显示了未在全网络启用的主题。在此处启用某一主题将"
-"会使其在该站点上可用。这并不会激活该主题，只是会让其在站点的“外观”菜单种显"
-"示。要为整个网络启用主题，请查看<a href=\"%s\">网络主题</a>画面。"
+msgid "<strong>Themes</strong> &mdash; This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
+msgstr "<strong>主题</strong> — 此处显示了未在全网络启用的主题。在此处启用某一主题将会使其在该站点上可用。这并不会激活该主题，只是会让其在站点的“外观”菜单种显示。要为整个网络启用主题，请查看<a href=\"%s\">网络主题</a>画面。"
 
 #: wp-admin/network/site-info.php:29 wp-admin/network/site-settings.php:27
 #: wp-admin/network/site-themes.php:27 wp-admin/network/site-users.php:30
-msgid ""
-"<strong>Settings</strong> &mdash; This page shows a list of all settings "
-"associated with this site. Some are created by WordPress and others are "
-"created by plugins you activate. Note that some fields are grayed out and "
-"say Serialized Data. You cannot modify these values due to the way the "
-"setting is stored in the database."
-msgstr ""
-"<strong>设置</strong> — 此画面显示了与站点相关的所有设置的列表。一些由"
-"WordPress创建，一些由您激活的插件创建。留意一些字段会显示为灰色的“序列化数"
-"据”，因为这些数据在数据库中的存储方式，您不能直接修改这些值。"
+msgid "<strong>Settings</strong> &mdash; This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
+msgstr "<strong>设置</strong> — 此画面显示了与站点相关的所有设置的列表。一些由WordPress创建，一些由您激活的插件创建。留意一些字段会显示为灰色的“序列化数据”，因为这些数据在数据库中的存储方式，您不能直接修改这些值。"
 
 #: wp-admin/network/site-info.php:34 wp-admin/network/site-new.php:32
 #: wp-admin/network/site-settings.php:32 wp-admin/network/site-themes.php:32
 #: wp-admin/network/site-users.php:35 wp-admin/network/sites.php:45
-msgid ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Sites_Screen\" target="
-"\"_blank\">Documentation on Site Management</a>"
-msgstr ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Sites_Screen\" target="
-"\"_blank\">站点管理使用帮助</a>"
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Sites_Screen\" target=\"_blank\">Documentation on Site Management</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Sites_Screen\" target=\"_blank\">站点管理使用帮助</a>"
 
 #: wp-admin/network/site-info.php:41 wp-admin/network/site-settings.php:39
 #: wp-admin/network/site-themes.php:60 wp-admin/network/site-users.php:55
@@ -962,16 +888,11 @@ msgid "You do not have sufficient permissions to add sites to this network."
 msgstr "您无权在本网络上添加站点。"
 
 #: wp-admin/network/site-new.php:26
-msgid ""
-"This screen is for Super Admins to add new sites to the network. This is not "
-"affected by the registration settings."
-msgstr ""
-"此页面供超级管理员向网络添加站点使用。在这里添加站点不受站点注册策略的限制。"
+msgid "This screen is for Super Admins to add new sites to the network. This is not affected by the registration settings."
+msgstr "此页面供超级管理员向网络添加站点使用。在这里添加站点不受站点注册策略的限制。"
 
 #: wp-admin/network/site-new.php:27
-msgid ""
-"If the admin email for the new site does not exist in the database, a new "
-"user will also be created."
+msgid "If the admin email for the new site does not exist in the database, a new user will also be created."
 msgstr "若新站点填写的管理员电子邮件地址在网络中不存在，新用户也将一并被创建。"
 
 #: wp-admin/network/site-new.php:40
@@ -980,9 +901,7 @@ msgstr "不能创建空站点。"
 
 #. translators: %s: reserved names list
 #: wp-admin/network/site-new.php:54
-msgid ""
-"The following words are reserved for use by WordPress functions and cannot "
-"be used as blog names: %s"
+msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: %s"
 msgstr "下列名称由WordPress自身功能占用，因此不能作为博客名称：%s"
 
 #: wp-admin/network/site-new.php:76
@@ -1030,11 +949,8 @@ msgstr "站点管理员"
 
 #. translators: 1: dashboard url, 2: network admin edit url
 #: wp-admin/network/site-new.php:171
-msgid ""
-"Site added. <a href=\"%1$s\">Visit Dashboard</a> or <a href=\"%2$s\">Edit "
-"Site</a>"
-msgstr ""
-"站点已添加。<a href=\"%1$s\">访问控制板</a>或<a href=\"%2$s\">编辑站点</a>"
+msgid "Site added. <a href=\"%1$s\">Visit Dashboard</a> or <a href=\"%2$s\">Edit Site</a>"
+msgstr "站点已添加。<a href=\"%1$s\">访问控制板</a>或<a href=\"%2$s\">编辑站点</a>"
 
 #: wp-admin/network/site-new.php:177 wp-admin/network/site-new.php:187
 msgid "Add New Site"
@@ -1049,8 +965,7 @@ msgid "Admin Email"
 msgstr "管理员电子邮件地址"
 
 #: wp-admin/network/site-new.php:246
-msgid ""
-"A new user will be created if the above email address is not in the database."
+msgid "A new user will be created if the above email address is not in the database."
 msgstr "若电子邮件地址在数据库中不存在，新用户将被创建。"
 
 #: wp-admin/network/site-new.php:246
@@ -1156,25 +1071,15 @@ msgid "A password reset link will be sent to the user via email."
 msgstr "密码重设链接将通过电子邮件发给用户。"
 
 #: wp-admin/network/sites.php:31
-msgid ""
-"Add New takes you to the Add New Site screen. You can search for a site by "
-"Name, ID number, or IP address. Screen Options allows you to choose how many "
-"sites to display on one page."
-msgstr ""
-"“添加新站点”链接将带您到添加新站点的页面。在这里，您可以通过名称、ID或IP地址"
-"搜索某站点。在显示选项中，您可修改每页显示的站点数目。"
+msgid "Add New takes you to the Add New Site screen. You can search for a site by Name, ID number, or IP address. Screen Options allows you to choose how many sites to display on one page."
+msgstr "“添加新站点”链接将带您到添加新站点的页面。在这里，您可以通过名称、ID或IP地址搜索某站点。在显示选项中，您可修改每页显示的站点数目。"
 
 #: wp-admin/network/sites.php:32
-msgid ""
-"This is the main table of all sites on this network. Switch between list and "
-"excerpt views by using the icons above the right side of the table."
-msgstr ""
-"这是本网络中所有站点的列表。您可通过点击列表上方的按钮，在“列表视图”和“摘要视"
-"图”模式间切换。"
+msgid "This is the main table of all sites on this network. Switch between list and excerpt views by using the icons above the right side of the table."
+msgstr "这是本网络中所有站点的列表。您可通过点击列表上方的按钮，在“列表视图”和“摘要视图”模式间切换。"
 
 #: wp-admin/network/sites.php:33
-msgid ""
-"Hovering over each site reveals seven options (three for the primary site):"
+msgid "Hovering over each site reveals seven options (three for the primary site):"
 msgstr "将鼠标移至站点上方，会出现7个选项（主站点则出现3个）："
 
 #: wp-admin/network/sites.php:34
@@ -1186,11 +1091,8 @@ msgid "Dashboard leads to the Dashboard for that site."
 msgstr "“控制板”，带您访问该站点的控制板。"
 
 #: wp-admin/network/sites.php:36
-msgid ""
-"Deactivate, Archive, and Spam which lead to confirmation screens. These "
-"actions can be reversed later."
-msgstr ""
-"点击“停用”、“存档”和“垃圾站点”，则自动跳转至确认页面。这些操作是可逆的。"
+msgid "Deactivate, Archive, and Spam which lead to confirmation screens. These actions can be reversed later."
+msgstr "点击“停用”、“存档”和“垃圾站点”，则自动跳转至确认页面。这些操作是可逆的。"
 
 #: wp-admin/network/sites.php:37
 msgid "Delete which is a permanent action after the confirmation screens."
@@ -1201,9 +1103,7 @@ msgid "Visit to go to the front-end site live."
 msgstr "点击“访问”可进入该站点的前台。"
 
 #: wp-admin/network/sites.php:39
-msgid ""
-"The site ID is used internally, and is not shown on the front end of the "
-"site or to users/viewers."
+msgid "The site ID is used internally, and is not shown on the front end of the site or to users/viewers."
 msgstr "站点ID是内部使用的，不会在站点前台显示给用户或访客。"
 
 #: wp-admin/network/sites.php:40
@@ -1377,41 +1277,20 @@ msgid "No, return me to the theme list"
 msgstr "不，返回主题列表"
 
 #: wp-admin/network/themes.php:218
-msgid ""
-"This screen enables and disables the inclusion of themes available to choose "
-"in the Appearance menu for each site. It does not activate or deactivate "
-"which theme a site is currently using."
-msgstr ""
-"本页面设置每个站点的“外观”菜单中，可供用户选择的主题。不能停用站点正在使用的"
-"主题。"
+msgid "This screen enables and disables the inclusion of themes available to choose in the Appearance menu for each site. It does not activate or deactivate which theme a site is currently using."
+msgstr "本页面设置每个站点的“外观”菜单中，可供用户选择的主题。不能停用站点正在使用的主题。"
 
 #: wp-admin/network/themes.php:219
-msgid ""
-"If the network admin disables a theme that is in use, it can still remain "
-"selected on that site. If another theme is chosen, the disabled theme will "
-"not appear in the site&#8217;s Appearance > Themes screen."
-msgstr ""
-"若网络管理员禁用了正在使用的主题，在该站点上，这个主题将依然可用。一旦这位用"
-"户选择了其它主题，那么用户就无法再选择回来了。"
+msgid "If the network admin disables a theme that is in use, it can still remain selected on that site. If another theme is chosen, the disabled theme will not appear in the site&#8217;s Appearance > Themes screen."
+msgstr "若网络管理员禁用了正在使用的主题，在该站点上，这个主题将依然可用。一旦这位用户选择了其它主题，那么用户就无法再选择回来了。"
 
 #: wp-admin/network/themes.php:220
-msgid ""
-"Themes can be enabled on a site by site basis by the network admin on the "
-"Edit Site screen (which has a Themes tab); get there via the Edit action "
-"link on the All Sites screen. Only network admins are able to install or "
-"edit themes."
-msgstr ""
-"在“编辑站点”的“主题”选项卡，您可以为每个站点设置不同的主题。通过“所有站点”页"
-"面上相应站点的“编辑”链接可以找到这个选项卡。只有网络管理员有权安装和编辑主"
-"题。"
+msgid "Themes can be enabled on a site by site basis by the network admin on the Edit Site screen (which has a Themes tab); get there via the Edit action link on the All Sites screen. Only network admins are able to install or edit themes."
+msgstr "在“编辑站点”的“主题”选项卡，您可以为每个站点设置不同的主题。通过“所有站点”页面上相应站点的“编辑”链接可以找到这个选项卡。只有网络管理员有权安装和编辑主题。"
 
 #: wp-admin/network/themes.php:225
-msgid ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Themes_Screen\" target="
-"\"_blank\">Documentation on Network Themes</a>"
-msgstr ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Themes_Screen\" target="
-"\"_blank\">站点主题使用帮助</a>"
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentation on Network Themes</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">站点主题使用帮助</a>"
 
 #: wp-admin/network/themes.php:231
 msgid "Themes list navigation"
@@ -1427,36 +1306,20 @@ msgid "You cannot delete a theme while it is active on the main site."
 msgstr "您不能删除主站点正在使用的主题。"
 
 #: wp-admin/network/upgrade.php:25
-msgid ""
-"Only use this screen once you have updated to a new version of WordPress "
-"through Updates/Available Updates (via the Network Administration navigation "
-"menu or the Toolbar). Clicking the Upgrade Network button will step through "
-"each site in the network, five at a time, and make sure any database updates "
-"are applied."
-msgstr ""
-"请在“更新”或“可用更新”页面（通过“管理网络”区域的导航菜单或“工具栏”来进入）升"
-"级到最新WordPress版本之后再使用本页面。点击“升级网络”按钮，WordPress将自动依"
-"次升级网络中的所有站点（5个一次），并确保所有站点的数据库处于最新结构。"
+msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
+msgstr "请在“更新”或“可用更新”页面（通过“管理网络”区域的导航菜单或“工具栏”来进入）升级到最新WordPress版本之后再使用本页面。点击“升级网络”按钮，WordPress将自动依次升级网络中的所有站点（5个一次），并确保所有站点的数据库处于最新结构。"
 
 #: wp-admin/network/upgrade.php:26
-msgid ""
-"If a version update to core has not happened, clicking this button won&#8217;"
-"t affect anything."
+msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
 msgstr "若您没有升级WordPress核心，点击这个按钮是不会起任何作用的。"
 
 #: wp-admin/network/upgrade.php:27
-msgid ""
-"If this process fails for any reason, users logging in to their sites will "
-"force the same update."
+msgid "If this process fails for any reason, users logging in to their sites will force the same update."
 msgstr "若更新的过程因故中断或失败，登录站点的用户将被要求继续进行更新。"
 
 #: wp-admin/network/upgrade.php:32
-msgid ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\" target="
-"\"_blank\">Documentation on Upgrade Network</a>"
-msgstr ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\" target="
-"\"_blank\">升级网络使用帮助</a>"
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Upgrade Network</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">升级网络使用帮助</a>"
 
 #: wp-admin/network/upgrade.php:60
 msgid "All done!"
@@ -1464,16 +1327,11 @@ msgstr "全部完成！"
 
 #. translators: 1: site url, 2: server error message
 #: wp-admin/network/upgrade.php:76
-msgid ""
-"Warning! Problem updating %1$s. Your server may not be able to connect to "
-"sites running on it. Error message: %2$s"
-msgstr ""
-"警告！升级%1$s时遇到问题，您的服务器或许不能连接到运行的站点。错误信息：%2$s"
+msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
+msgstr "警告！升级%1$s时遇到问题，您的服务器或许不能连接到运行的站点。错误信息：%2$s"
 
 #: wp-admin/network/upgrade.php:100
-msgid ""
-"If your browser doesn&#8217;t start loading the next page automatically, "
-"click this link:"
+msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
 msgstr "若您的站点不自动加载下一页，请点击："
 
 #: wp-admin/network/upgrade.php:100
@@ -1481,38 +1339,20 @@ msgid "Next Sites"
 msgstr "继续升级下一批站点"
 
 #: wp-admin/network/upgrade.php:115
-msgid ""
-"WordPress has been updated! Before we send you on your way, we need to "
-"individually upgrade the sites in your network."
-msgstr ""
-"WordPress已成功升级！在我们送您上路之前，我们需要单独升级您网络中的每个站点。"
+msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
+msgstr "WordPress已成功升级！在我们送您上路之前，我们需要单独升级您网络中的每个站点。"
 
 #: wp-admin/network/user-new.php:23
-msgid ""
-"Add User will set up a new user account on the network and send that person "
-"an email with username and password."
-msgstr ""
-"“添加用户”将在网络中创建用户帐户，并自动向该人发送包含用户名和密码的电子邮"
-"件。"
+msgid "Add User will set up a new user account on the network and send that person an email with username and password."
+msgstr "“添加用户”将在网络中创建用户帐户，并自动向该人发送包含用户名和密码的电子邮件。"
 
 #: wp-admin/network/user-new.php:24
-msgid ""
-"Users who are signed up to the network without a site are added as "
-"subscribers to the main or primary dashboard site, giving them profile pages "
-"to manage their accounts. These users will only see Dashboard and My Sites "
-"in the main navigation until a site is created for them."
-msgstr ""
-"在网络中注册，且不拥有站点的用户将以订阅者的身份加入主控制板站点，允许他们在"
-"其中修改资料、管理自己的账户。在他们创建自己的站点之前，只能在导航栏中看到“控"
-"制板”和“我的站点”菜单。"
+msgid "Users who are signed up to the network without a site are added as subscribers to the main or primary dashboard site, giving them profile pages to manage their accounts. These users will only see Dashboard and My Sites in the main navigation until a site is created for them."
+msgstr "在网络中注册，且不拥有站点的用户将以订阅者的身份加入主控制板站点，允许他们在其中修改资料、管理自己的账户。在他们创建自己的站点之前，只能在导航栏中看到“控制板”和“我的站点”菜单。"
 
 #: wp-admin/network/user-new.php:29 wp-admin/network/users.php:171
-msgid ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target="
-"\"_blank\">Documentation on Network Users</a>"
-msgstr ""
-"<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target="
-"\"_blank\">网络用户使用帮助</a>"
+msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
+msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">网络用户使用帮助</a>"
 
 #: wp-admin/network/user-new.php:40
 msgid "Cannot create an empty user."
@@ -1528,165 +1368,9 @@ msgid "User added. <a href=\"%s\">Edit user</a>"
 msgstr "用户已添加。<a href=\"%s\">编辑用户</a>"
 
 #: wp-admin/network/users.php:73
-msgid ""
-"Warning! User cannot be modified. The user %s is a network administrator."
+msgid "Warning! User cannot be modified. The user %s is a network administrator."
 msgstr "警告！无法修改%s，该用户是网络管理员。"
 
 #: wp-admin/network/users.php:161
-msgid ""
-"This table shows all users across the network and the sites to which they "
-"are assigned."
+msgid "This table shows all users across the network and the sites to which they are assigned."
 msgstr "本表格列出网络中的所有用户，以及它们所在的站点。"
-
-#: wp-admin/network/users.php:162
-msgid ""
-"Hover over any user on the list to make the edit links appear. The Edit link "
-"on the left will take you to their Edit User profile page; the Edit link on "
-"the right by any site name goes to an Edit Site screen for that site."
-msgstr ""
-"将鼠标移至用户的上方，将出现编辑链接。左侧的编辑链接是编辑用户信息的；而右侧"
-"的编辑链接用于编辑其所属站点的信息。"
-
-#: wp-admin/network/users.php:163
-msgid ""
-"You can also go to the user&#8217;s profile page by clicking on the "
-"individual username."
-msgstr "您也可以通过点击用户的名字，访问其资料页。"
-
-#: wp-admin/network/users.php:164
-msgid ""
-"You can sort the table by clicking on any of the bold headings and switch "
-"between list and excerpt views by using the icons in the upper right."
-msgstr ""
-"您可以通过点击加粗的表头来对项目进行排序。有上方的图标可在“列表视图”和“摘要视"
-"图”间切换。"
-
-#: wp-admin/network/users.php:165
-msgid ""
-"The bulk action will permanently delete selected users, or mark/unmark those "
-"selected as spam. Spam users will have posts removed and will be unable to "
-"sign up again with the same email addresses."
-msgstr ""
-"批量操作将永久删除选中的用户，或标记/取消标记选择的用户为垃圾用户。垃圾用户的"
-"发布的文章将被删除，并无法再使用原电子邮件地址注册。"
-
-#: wp-admin/network/users.php:166
-msgid ""
-"You can make an existing user an additional super admin by going to the Edit "
-"User profile page and checking the box to grant that privilege."
-msgstr ""
-"您可将现有的用户设为超级管理员，方法是：在编辑用户资料的页面，点击选框以赋予"
-"该用户权限。"
-
-#: wp-admin/network/users.php:192
-msgid "Users marked as spam."
-msgstr "多个用户已被标记为垃圾用户。"
-
-#: wp-admin/network/users.php:195
-msgid "Users removed from spam."
-msgstr "多个用户已被从垃圾用户列表中移除。"
-
-#: wp-admin/network/users.php:198
-msgid "Users deleted."
-msgstr "多个用户已被删除。"
-
-#: wp-admin/network.php:29
-msgid "The Network creation panel is not for WordPress MU networks."
-msgstr "网络创建页面对WordPress MU网络不适用。"
-
-#. translators: 1: WP_ALLOW_MULTISITE 2: wp-config.php
-#: wp-admin/network.php:44
-msgid ""
-"You must define the %1$s constant as true in your %2$s file to allow "
-"creation of a Network."
-msgstr "您必须在您的%2$s文件中将%1$s常量设置为真来创建网络。"
-
-#: wp-admin/network.php:55
-msgid "Create a Network of WordPress Sites"
-msgstr "创建一个WordPress站点网络"
-
-#: wp-admin/network.php:59
-msgid ""
-"This screen allows you to configure a network as having subdomains "
-"(<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</"
-"code>). Subdomains require wildcard subdomains to be enabled in Apache and "
-"DNS records, if your host allows it."
-msgstr ""
-"您可以在本页面配置使用子域名（<code>site1.example.com</code>）或子目录"
-"（<code>example.com/site1</code>）的网络。若使用子域名，您需要在Apache和DNS记"
-"录中启用泛域名。"
-
-#: wp-admin/network.php:60
-msgid ""
-"Choose subdomains or subdirectories; this can only be switched afterwards by "
-"reconfiguring your install. Fill out the network details, and click install. "
-"If this does not work, you may have to add a wildcard DNS record (for "
-"subdomains) or change to another setting in Permalinks (for subdirectories)."
-msgstr ""
-"选择子域名或子目录；一旦安装完成不可更改，除非重新配置您的安装。填写网络详"
-"情，再点击安装。若不起作用，您可能必须添加泛域名记录（用于子域名）或更换固定"
-"链接（使用子目录）。"
-
-#: wp-admin/network.php:61
-msgid ""
-"The next screen for Network Setup will give you individually-generated lines "
-"of code to add to your wp-config.php and .htaccess files. Make sure the "
-"settings of your FTP client make files starting with a dot visible, so that "
-"you can find .htaccess; you may have to create this file if it really is not "
-"there. Make backup copies of those two files."
-msgstr ""
-"在“配置网络”的下一个页面，WordPress将向您提供专为您生成的几行代码，请将它们按"
-"要求加入到wp-config.php和.htaccess文件中。请确保您的FTP客户端不隐藏以点（.）"
-"开头的文件，这样您才能看到.htaccess文件；若它确实不存在，您需手工创建这个文"
-"件。请在对文件作出更改前，备份这两个文件。"
-
-#: wp-admin/network.php:62
-msgid ""
-"Add the designated lines of code to wp-config.php (just before <code>/*..."
-"stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing "
-"WordPress rules)."
-msgstr ""
-"加入如下内容到 wp-config.php（在<code>/*...stop editing...*/或/*...停止编"
-"辑...*/</code>上方）和<code>.htaccess</code>（替换WordPress原来生成的内容）。"
-
-#: wp-admin/network.php:63
-msgid ""
-"Once you add this code and refresh your browser, multisite should be "
-"enabled. This screen, now in the Network Admin navigation menu, will keep an "
-"archive of the added code. You can toggle between Network Admin and Site "
-"Admin by clicking on the Network Admin or an individual site name under the "
-"My Sites dropdown in the Toolbar."
-msgstr ""
-"在您添加完代码后，请在浏览器刷新页面，之后多站点功能就应该自动启用了。这个页"
-"面将仍然保留这段代码，以备日后使用。您可在“管理网络”界面的导航菜单中再次访问"
-"本页面来查看代码。用户可以通过顶部“工具栏”中的“我的站点”下拉菜单在“管理网"
-"络”和“管理站点”之间切换。"
-
-#: wp-admin/network.php:64
-msgid ""
-"The choice of subdirectory sites is disabled if this setup is more than a "
-"month old because of permalink problems with &#8220;/blog/&#8221; from the "
-"main site. This disabling will be addressed in a future version."
-msgstr ""
-"若本站点已经安装超过一个月了。由于主站点“/blog/”固定链接的问题，您不能选择使"
-"用子目录。此问题将很快在未来版本中解决。"
-
-#: wp-admin/network.php:66 wp-admin/network.php:77
-msgid ""
-"<a href=\"https://codex.wordpress.org/Create_A_Network\" target=\"_blank"
-"\">Documentation on Creating a Network</a>"
-msgstr ""
-"<a href=\"https://codex.wordpress.org/Create_A_Network\" target=\"_blank\">创"
-"建网络使用帮助</a>"
-
-#: wp-admin/network.php:67 wp-admin/network.php:78
-msgid ""
-"<a href=\"https://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank"
-"\">Documentation on the Network Screen</a>"
-msgstr ""
-"<a href=\"https://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank"
-"\">网络设置使用帮助</a>"
-
-#: wp-admin/network.php:71
-msgid "Network"
-msgstr "站点网络"
